@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="com.miui.fm" />
+        <package android:name="com.miui.fmservice" />
+    </queries>
+    <uses-feature android:name="android.hardware.radio.fm" android:required="false" />
+    <application
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:label="FM Radio Ultra"
+        android:allowBackup="false"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
